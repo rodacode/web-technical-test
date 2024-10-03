@@ -29,7 +29,7 @@ const VehiclePopup: React.FC<VehiclePopupProps> = ({ vehicle, onClose }) => {
                     className="h-13 w-18 mr-2.5"
                 />
                 <div className="flex flex-col justify-start items-start">
-                    <h3 className="text-lg leading-5 font-inter font-semibold mb-1">
+                    <h3 className="text-lg leading-5 font-inter mb-2">
                         {vehicle.name}
                     </h3>
                     <StatusLabel status={vehicle.status} />
