@@ -11,22 +11,22 @@ const VehicleMarker: React.FC<VehicleMarkerProps> = ({ vehicle, isSelected, onCl
   const getMarkerColor = () => {
     switch (vehicle.status) {
       case 'AVAILABLE':
-        return 'bg-orange-500';
+        return 'bg-[#F7B328]';
       case 'BOOKED':
-        return 'bg-black';
+        return 'bg-[#475467]';
       case 'MAINTENANCE':
-        return 'bg-red-500';
+        return 'bg-[#E1485C]';
       default:
-        return 'bg-gray-500';
+        return 'bg-[#F7B328]';
     }
   };
 
   return (
     <div 
-      className={`w-8 h-8 rounded-full flex items-center justify-center cursor-pointer ${getMarkerColor()} ${isSelected ? 'ring-4 ring-blue-500' : ''}`}
+      className={`w-6 h-6 rounded-full flex items-center justify-center cursor-pointer ${getMarkerColor()} ${isSelected ? 'ring-4 ring-blue-500' : ''}`}
       onClick={onClick}
     >
-      <div className="w-4 h-4 rounded-full bg-white" />
+      <div className="w-2 h-2 rounded-full bg-white" />
     </div>
   );
 };
