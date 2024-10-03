@@ -50,7 +50,7 @@ const ZoneLayer: React.FC<ZoneLayerProps> = ({ zoneData }) => {
           type="line"
           source="barcelona-zones"
           paint={{
-            'line-color': '#000000',
+            'line-color': 'transparent',
             'line-width': 2,
           }}
         />

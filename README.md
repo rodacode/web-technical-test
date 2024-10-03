@@ -1,3 +1,13 @@
+###
+
+TODO:
+
+- Add unit tests
+- Fix popup styles
+- Tailwind variables
+
+
+
 # Web Technical Test
 
 You will build a tiny Yego Web app with React and ViteJS. The objective will be to test your technical skills and knowledge of this language and followings stack. You will be evaluated on the code structure and graphical structure of your application. The goal is to have a complete overview of your skills.
