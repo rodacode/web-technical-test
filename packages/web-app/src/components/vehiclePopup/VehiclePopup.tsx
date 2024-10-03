@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Popup } from 'react-map-gl';
-import { Vehicle } from '../../hooks/useVehicleSocket';
+import { Vehicle } from '../../types';
 import StatusLabel from '../statusLabel/StatusLabel';
 
 interface VehiclePopupProps {
