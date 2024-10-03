@@ -10,7 +10,7 @@ import barcelonaZones from '../../assets/zones/barcelona.json';
 import { useVehicleContext } from '../../contexts/VechicleContext';
 import { Feature, Polygon, MultiPolygon,FeatureCollection, Geometry, GeoJsonProperties  } from 'geojson';
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiZ3VpZ3VpbGxlIiwiYSI6ImNtMHdrcjV4ZTAzMG8yaXF2ZnVjbGtpbWkifQ.JOqHUo__6O4vi7K_L8kajQ';
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
 function MapComponent() {
   const { vehicles, selectedVehicle, setSelectedVehicle } = useVehicleContext();

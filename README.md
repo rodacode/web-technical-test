@@ -2,6 +2,7 @@
 
 TODO:
 
+- Check Zones and styling
 - Add unit tests
 - Fix popup styles
 - Tailwind variables
