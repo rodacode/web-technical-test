@@ -21,7 +21,7 @@ const VehiclePopup: React.FC<VehiclePopupProps> = ({ vehicle, onClose }) => {
     }, []);
 
     const popupContent = (
-        <div className="flex flex-col justify-start rounded-xl border border-gray-200 overflow-hidden bg-white">
+        <div className="flex flex-col justify-start rounded-xl border border-gray-200 overflow-hidden bg-white rounded-md">
             <div className="flex flex-row justify-start items-center border-b border-gray-200 p-2.5">
                 <img 
                     src="/scooter_illustration.png" 
@@ -61,7 +61,7 @@ const VehiclePopup: React.FC<VehiclePopupProps> = ({ vehicle, onClose }) => {
             onClose={onClose}
             closeOnClick={false}
             anchor="top"
-            className="z-10"
+            className="z-10 p-1 m-0 rounded"
         >
             {popupContent}
         </Popup>
