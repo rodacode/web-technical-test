@@ -29,18 +29,18 @@ const VehiclePopup: React.FC<VehiclePopupProps> = ({ vehicle, onClose }) => {
                     className="h-13 w-18 mr-2.5"
                 />
                 <div className="flex flex-col justify-start items-start">
-                    <h3 className="text-lg leading-5 font-inter mb-2">
+                    <h3 className="text-lg leading-5 font-inter font-semibold mb-2 text-[#475467]">
                         {vehicle.name}
                     </h3>
                     <StatusLabel status={vehicle.status} />
                 </div>
             </div>
-            <div className={`flex ${isMobile ? 'flex-row justify-between' : 'flex-col'} p-2.5 px-3`}>
-                <p className="text-base font-inter">
-                    Plate: <strong>{vehicle.plate_number?.toUpperCase()}</strong>
+            <div className={`flex ${isMobile ? 'flex-row justify-between' : 'flex-col'} p-2.5 px-3 text-[#475467]`}>
+                <p className="text-base font-inter font-normal">
+                    Plate: <span className="text-base font-inter font-semibold">{vehicle.plate_number?.toUpperCase()}</span>
                 </p>
-                <p className="text-base font-inter">
-                    Battery: <strong>{vehicle.battery?.toFixed(2)}%</strong>
+                <p className="text-base font-inter font-normal">
+                    Battery: <span className="text-base font-inter font-semibold">{vehicle.battery?.toFixed(2)}%</span>
                 </p>
             </div>
         </div>
