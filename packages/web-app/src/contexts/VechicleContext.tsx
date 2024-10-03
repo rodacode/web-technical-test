@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useMemo } from 'react';
-import { Vehicle, useVehicleSocket } from '../hooks/useVehicleSocket';
+import { useVehicleSocket } from '../hooks/useVehicleSocket';
+import { Vehicle } from '../types';
 
 interface VehicleContextType {
   vehicles: Vehicle[];

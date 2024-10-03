@@ -1,16 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { io, Socket } from "socket.io-client";
-
-export interface Vehicle {
-  id: number;
-  name: string;
-  battery: number;
-  plate_number: string;
-  lat: number;
-  lng: number;
-  status: "AVAILABLE" | "BOOKED" | "MAINTENANCE" | "DISABLED";
-}
-
+import { Vehicle } from "../types";
 interface ServerToClientEvents {
   vehicle: (vehicle: Vehicle) => void;
   vehicles: (vehicles: Vehicle[]) => void;
